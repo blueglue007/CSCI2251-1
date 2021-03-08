@@ -1,5 +1,5 @@
 /*
-CSCI 2501
+CSCI 2501                                         ////2251        
 Zhibin "Bing" Hong
 zhong@cnm.edu
 Lab03: ConcurrentProcessing
@@ -15,7 +15,7 @@ public class MatrixMain {
     public static void main(String args[]) throws FileNotFoundException {
 
         // read file
-        File file = new File("src/matrix.txt");
+        File file = new File("src/matrix.txt");                        ///老师的命令是java MatrixThread <matrix file>
         Integer numberofRow = null;
         Integer numberofCol = null;
         Scanner sc = new Scanner(file);
