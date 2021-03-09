@@ -1,5 +1,5 @@
 /*
-CSCI 2501
+CSCI 2501                                                 //2251
 Zhibin "Bing" Hong
 zhong@cnm.edu
 Lab03: ConcurrentProcessing
@@ -14,7 +14,7 @@ public class MatrixMain {
     public static void main(String args[]) throws FileNotFoundException, InterruptedException {
 
         // read file
-        File file = new File("src/matrix.txt");
+        File file = new File("src/matrix.txt");                                   //java MatrixThread <matrix file>
         Integer numberofRow;
         Integer numberofCol;
         Scanner sc = new Scanner(file);
@@ -75,7 +75,7 @@ public class MatrixMain {
         int[][] C10;
         int[][] C11;
 
-        for (int r = 0; r < Row00; r++) {
+        for (int r = 0; r < Row00; r++) {                   
             for (int c = 0; c < Col00; c++) {
                 A00[r][c] = A[r][c];
                 A10[r][c] = A[r + Row00][c];
@@ -84,7 +84,7 @@ public class MatrixMain {
             }
         }
 
-        if (Row00 % 2 != 0 || Col00 % 2 != 0) {
+        if (Row00 % 2 != 0 || Col00 % 2 != 0) {                                                  //目测有问题
             for (int r = 0; r < Row01; r++) {
                 for (int c = 0; c < Col01; c++) {
                     A01[r][c] = A[r][c + Col01 - 1];
